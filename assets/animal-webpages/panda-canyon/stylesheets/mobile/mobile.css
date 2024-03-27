@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+    .section-mobile--position {
+        max-height: 100vh;
+        position: relative;
+        padding-top: 4em;
+    }
+
+    .hero-image {
+        padding-top: 2em;
+        object-fit: cover;
+    }
+
+    .animal-section-card--reponsive-image {
+        width: 100%;
+        height: auto;
+        padding: .5em;
+    }
+
+    .animal-section__card-description {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .animal-section__heading {
+        margin-top: 1em;
+        padding: .2em;
+    }
+
+    .animal-section__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero__article--layout {
+        width: 90vw;
+        margin-top: 10em;
+        margin-left: 1em;
+        padding-right: 8em;
+    }
+
+    .hero-article__sub-text {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/logo/colorful-panda-favicon.svg">
+        
+        <!-- Desktop And Mobile Styles for resposiveness-->
+        <link rel="stylesheet" href="../panda-canyon/stylesheets/desktop/desktop.css">
+        <link rel="stylesheet" href="../panda-canyon/stylesheets/mobile/mobile.css">
+        <!-- Stylesheet for basic utilities like alignment, text adjustments, etc. and also the main navigations styles-->
+        <link rel="stylesheet" href="../../../assets/stylesheets/utility.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/navigation-stylesheet.css">
+        
+        
+        <title>Pine City Panda Canyon</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <img src="../../../assets/logo/Pine-city-zoo-desktop.svg" alt="pine city zoo logo" class="first-logo">
+            <nav class="main-navigation--bottom">
+                <ul class="main-navigation__unordered-list">
+                    <li class="list__item list-item-1"><a href="../../../index.html"><img src="#"><br>Home<a></li>
+
+                    <li class="list__item list-item-2"><a href="#"><img src="#"><br>About</a></li>
+
+                    <li class="list__item list-item-3"><a href="#"><img src="#"><br>Contact</a></li>
+                </ul>
+            </nav>
+            <!-- For mobile navigation menu -->
+            <div class="second-nav__container">
+                <img src="../../../assets/logo/Pine-city-zoo.svg" alt="pine city zoo logo" class="mobile-logo">
+                
+                <label for="checkbox" class="checkbox-label">>> Menu</label>
+                <input id="checkbox" type="checkbox" class="label__checkbox" role="button">
+        
+                <nav class="second-navigation">
+                    <ul class="second-navigation__unordered-list">
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Our Zootopia</a></li>
+                        <li><a href="#">Our Shops</a></li>
+                        <li><a href="#">Our Resturant</a></li>
+                        <li><a href="#">Our Coffee Shops</a></li>
+                        <li><a href="#">Our Attractions</a></li>
+                        <li><a href="#">Our Map</a></li>
+                        <li><a href="#">Weather Forecast of the Week</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero-section section--height section-mobile--position">
+            <img src="../panda-canyon/images/hero-image.jpg" alt="panda wondering in a forest"
+            class="hero-image">
+            <div class="decoration"></div>
+
+            <article class="hero__article hero__article--layout">
+                <h1 class="hero__article__heading hero__article__heading--color text--color font-title--large">The Panda Canyon</h1>
+                <p class="hero-article__sub-text text--color font-sub-text--sans">
+                    "Did you know Pandas have a large olifactorial region in their barin,
+                    thus enabeling them to sense what is happening to other pandas from
+                    miles away."
+                </p>
+            </article>
+        </section>
+        
+        <main class="main-section main-section--grid">
+            <section class="animal-section">
+                    <h2 class="animal-section__heading text--color">Panda Species</h2>
+                
+                    <ul class="animal-section__cards">
+                        <li class="animal-section__card-1">
+                            <a href="#">
+                                <img src="./images/large-view/group-pandas_433905-10785.jpg" class="animal-section-card--reponsive-image">
+                                <p class="animal-section__card-description font-subtext--medium">Giant Panda</p>
+                            </a>
+                        </li>
+
+                        <li class="animal-section__card-1">
+                            <a href="#">
+                                <img src="./images/large-view/group-red-pandas_433905-10131.jpg" class="animal-section-card--reponsive-image">
+                                <p class="animal-section__card-description font-subtext--medium">Red Panda</p>
+                            </a>
+                        </li>
+                    </ul> 
+            </section>
+        
+        </main>
+    </body>
+</html>

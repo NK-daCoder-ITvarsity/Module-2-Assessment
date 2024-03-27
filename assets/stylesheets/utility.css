@@ -1,0 +1,68 @@
+:root {
+    --text-color: hsl(0, 0%, 100%);
+
+    --font-size-title-large: clamp(2rem, calc(2rem + ((1vw - 0.12rem) * 5.8824)), 5rem);
+    --font-size-title-semi-large: clamp(0.5rem, calc(0.5rem + ((1vw - 0.16rem) * 0.8547)), 2.5rem);
+    --subtext-font-medium-size: clamp(0.3rem, calc(0.3rem + ((1vw - 0.12rem) * 3.3333)), 2rem);
+
+    --section-margin-centered: 0 auto;
+
+    --serif-font: serif;
+    --sans-serif-font: sans-serif;
+}
+
+/*=================================== TEXT MODIFIERS ========================================*/
+.text--color {
+    color: white;
+}
+
+.text-alignment--center {
+    text-align: center;
+}
+
+.text-alignment--left {
+    text-align: left;
+}
+
+.text-alignment--right {
+    text-align: right;
+}
+
+/*=================================== FONT MODIFIERS ========================================*/
+.font-title--large {
+    font-size: var(--font-size-title-large);
+}
+
+.font-title--semi-large {
+    font-size: var(--font-size-title-semi-large);
+}
+
+.font-subtext--medium {
+    font-size: var(--subtext-font-medium-size);
+}
+
+.font-title--serif {
+    font-family: var(--serif);
+}
+
+.font-sub-text--sans {
+    font-family: var(--sans-serif-font);
+}
+
+/*=================================== SECTION MODIFIERS ========================================*/
+.section-alignment--center {
+    margin: var(--section-margin-centered);
+}
+/*=================================== LINKS MODIFIERS ========================================*/
+.link-underline--none {
+    text-decoration: none;
+}
+
+/*=================================== LIST MODIFIERS ========================================*/
+.list-bulles---none {
+    list-style-type: none;
+}
+/*=================================== PADDING MODIFIERS ========================================*/
+.section--padding {
+    padding: 2em;
+}

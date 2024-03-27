@@ -1,0 +1,39 @@
+@media (max-width: 900px) {
+    .hero-section {
+        top: 50px;
+        border: 2px solid red;
+        margin-bottom: 5em;
+    }
+
+    .hero-section__image, .hero-section__decoration {
+        display: none;
+    }
+
+    .hero-section--background-image {
+        background-image: var(--background-image-hero-mobile);
+        background-color: var(--image-overlay);
+        background-blend-mode: overlay;
+    }
+
+    .hero-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -50vw;
+    }
+
+    .article-subtext {
+        font-size: large;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 390px) {
+    .hero-section {
+        background-position-x: -140vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 890px) {
+    .hero-section {
+        background-position-x: -30vw;
+    }
+}
