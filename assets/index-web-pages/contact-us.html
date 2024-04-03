@@ -16,16 +16,16 @@
         
         <title>Pine City Zoo</title>
     </head>
-    <body>
+    <body class="main-body--bottom-margin main--background">
         <header class="main-header">
             <img src="../logo/Pine-city-zoo-desktop.svg" alt="pine city zoo logo" class="first-logo">
             <nav class="main-navigation--bottom">
                 <ul class="main-navigation__unordered-list">
-                    <li class="list__item list-item-1"><a href="./index.html"><img src="#"><br>Home<a></li>
-
-                    <li class="list__item list-item-2"><a href="#"><img src="./about-us.html"><br>About</a></li>
-
-                    <li class="list__item list-item-3"><a href="#"><img src="./contact-us.html"><br>Contact</a></li>
+                    <li class="list__item list-item-1"><a href="../../index.html"><img src="../icons/black-outline-home.svg" class="navigation__image--resize"><br>Home</a></li>
+    
+                    <li class="list__item list-item-2"><a href="./about-us.html"><img src="../icons/about-black-fill-outline.svg" class="navigation__image--resize"><br>About</a></li>
+    
+                    <li class="list__item list-item-3"><a href="./contact-us.html"><img src="../icons/contact-black-fill.svg" class="navigation__image--resize"><br>Contact</a></li>
                 </ul>
             </nav>
             <!-- For mobile navigation menu -->
@@ -49,5 +49,35 @@
                 </nav>
             </div>
         </header>
+
+        <section class="form-section form-section--background-image">
+         
+            <img src="../animal-images/contact-us-image.jpg" class="image--adjustment-small image--border-radius" alt="image of a panda curious at what you are gonna say?">
+
+            <h1 class="form__heading">WE'D LOVE TO HEAR FROM YOU!</h1>
+            <p>We always strive to be better, so your feedback is important to us.</p>
+            <p class="form__paragraph">Please fill in the form</p>
+
+            <form class="form--1">
+                <fieldset class="form__fieldset">
+                    <label for="name">First Name: <br>
+                        <input type="text" id="name" placeholder="Your First Name" class="form--1__input">
+                    </label>
+                    
+                    <label for="last-name">Last Name: <br>
+                        <input type="text" id="last-name" placeholder="Your Last Name" class="form--1__input">
+                    </label>
+                    
+                    <label for="email">Email: <br>
+                        <input type="email" id="email" placeholder="Your Email" class="form--1__input">
+                    </label>
+
+                    <label>Your Comment: 
+                        <textarea id="text-area" placeholder="Type your message here" class="form--1__input"></textarea>
+                    </label>    
+                </fieldset>
+                <input type="submit" value="SUBMIT" class="form__button form-button--no-border button-color">
+            </form>
+        </section>
     </body>
 </html>

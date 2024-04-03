@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+:root {
+    --background-color: hsl(0, 0%, 15%);
+    --card-background: white;
+    --card-image-radius: 3em;
+    --background-image: url("../../index-web-pages/menu webpages/coffee-shop-assets/senior_couple_drinking_coffee_1151996846.jpg");
+    --background-second-image: url("");
+    --padding-text-space: 2em;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 3em;
+    padding-bottom: 5em;
+}
+
+.main-section__card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-columns: max-content;
+    gap: .8em;
+}
+
+
+.main-body--background {
+    background-color: var(--background-color)
+}
+
+.main-body--background-adjustment  {
+    background-position-y: -3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.603);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    filter: contrast(1.25);
+}
+
+.card-unordered-list__card {
+    background: var(--card-background);
+    padding: .5em;
+}
+
+.card__image {
+    border-top-right-radius: var(--card-image-radius);
+    border-bottom-left-radius: var(--card-image-radius);
+}
+
+.card-unordered-list__card > a p {
+    text-align: center;
+    padding: 1em;
+}
+
+/*========================================== COFFEE-SHOP PAGE =======================================================*/
+
+.main-background--image {
+    background-image: var(--background-image);
+    height: 100vh;
+}
+
+.main-section__image-logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: .8em;
+}
+
+.main-divider__logo-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.menu-section, .main-section__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section__location {
+    padding: var(--padding-text-space);
+}
+
+.menu-section__menu-routine-header {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.main-section__location {
+    background-image: var(--background-second-image);
+}
+
+.article-heading--bottom-padding {
+    padding-bottom: .5em;
+}
+
+/*=================================== MAP PAGE ================================================*/
+
+.main-map--overflow {
+    overflow: auto;
+}
+

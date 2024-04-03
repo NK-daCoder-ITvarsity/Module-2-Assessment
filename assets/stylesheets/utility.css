@@ -66,3 +66,22 @@
 .section--padding {
     padding: 2em;
 }
+
+
+/*=================================== IMAGES MODIFIERS ========================================*/
+.image--responsive {
+    width: 100%;
+    height: auto;
+}
+
+.navigation__image--resize {
+    width: 30px;
+    height: 30px;
+}
+
+/*=================================== CARD LIST ========================================*/
+
+.card-unordered-list--bullet-none {
+    list-style-type: none;
+}
+

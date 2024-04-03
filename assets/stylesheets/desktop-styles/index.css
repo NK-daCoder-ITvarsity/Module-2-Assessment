@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
     --nav-gradient: linear-gradient(90deg, hsl(17, 100%, 50%), hsl(337, 100%, 50%), orange);
     --gradient: linear-gradient(90deg, hsl(0, 0%, 0%), hsl(rgb(0, 0, 0)));
-    --image-background-color: hsla(0, 0%, 18%, 0.486);
+    --image-background-color: hsla(0, 0%, 9%, 0.603);
     --centered-margins: 0 auto;
     --text-color: white;
     --button-color: green;
@@ -21,148 +22,31 @@
     --third-sections-background-image: url("../../animal-images/african-site.jpg");
     --fourth-sections-background-image: url("../../animal-images/rhinocerous.jpg");
     --fifth-section-background-image: url("../../animal-images/lemmer.JPG");
+
+    /*About Page Animal Background Images */
+    --about-background: url("../../green-leafs.jpg");
+
+    /* Contact Page Animal Background Images */
+    --contact-us-background-image: url("../../green-leafs.jpg");
+
 }
 
 
 /* =================================== NAVIGATION ============================================ */
-@media (min-width: 900px)
-{
-    .main-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "images navigation external-navigation";
-        
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-
-        padding: 1em 0;
-        z-index: 2;
-    }
 
 
-    .main-navigation--bottom {
-        grid-area: navigation;
-        text-align: center;
-    }
-
-    .main-navigation--bottom .main-navigation__unordered-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "item-1 item-2 item-3"
-        ;
-    }
-
-    .list-item-1, .list-item-2, .list-item-3 {
-        padding-bottom: 1em;
-        padding-top: .5em;
-    }
-
-    .list-item-1 *, .list-item-2 *, .list-item-3 * {
-        color: var(--text-color);
-    }
-
-    .list-item-1 {
-        grid-area: item-1;
-    }
-
-    .list-item-2 {
-        grid-area: item-2;
-    }
-
-    .list-item-3{
-        grid-area: item-3;
-    }
-
-    .list__item img {
-        display: none;
-    }
-
-    .list__item {
-        list-style: none;
-    }
-
-    .first-logo {
-        grid-area: images;
-        width: 150px;
-        height: auto;
-    }
-
-    .mobile-logo {
-        display: none;
-    }
-
-
-    .second-nav__container {
-        grid-area: external-navigation;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "menu ..."
-        ;
-        align-items: center;
-        justify-items: center;
-
-    }
-
-    .label__checkbox {
-        display: none;
-    }
-
-    .checkbox-label {
-        grid-area: menu;
-        display: inline-block;
-        padding: .8em;
-        border-radius: .4em;
-        color: var(--text-color);
-        border: 2px solid var(--text-color);
-        cursor: pointer;
-    }
-
-    .second-navigation {
-        grid-area: unordered-list;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 68.5%;
-        width: 25%;
-        margin-top: .5em;
-        background-color: white;
-
-        border: 2px solid red;
-    }
-
-    .second-navigation__unordered-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        height: 240px;
-        overflow-y: scroll;
-    }
-
-    .second-navigation__unordered-list > li {
-        background-color: white;
-        padding: 1em;
-        
-    }
-
-    .second-navigation__unordered-list > li:hover {
-        background-color: red;
-    }
-
-    .label__checkbox:checked ~ .second-navigation {
-        display: block;
-    }
+/* ===================================== MAIN BODY BACKGROUND ======================================================= */
+.main--background {
+    background-image: var(--contact-us-background-image);
+    background-color: var(--image-background-color);
+    background-blend-mode: var(--blend-mode-background-image);
 }
 
+.main-body--bottom-margin {
+    margin-bottom: 10em;
+}
 
-/* =================================== HERO ============================================ */
+/* =================================== INDEX ============================================ */
 
 
 .hero-section--layout {
@@ -248,6 +132,146 @@
     height: 100vh;
     z-index: -5;
 }
+
+/* =================================== ABOUT ============================================ */
+.about-us {
+    position: relative;
+    padding-top: 5em;
+    background-image: var(--about-background);
+}
+
+.about-us-background-image--position {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--image-background-color);
+    background-blend-mode: var(--blend-mode-background-image);
+}
+
+.about-section--content-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-us-title {
+    padding: 3em;
+}
+
+.our-story-section {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.our-story__heading {
+    margin-top: 5em;
+    padding-bottom: 1em;
+}
+
+.our-story-section__text {
+    padding-right: 1em;
+}
+
+.empowerment-section, .objectives-care-section, .why-people-care-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.why-people-care-section, .objectives-care-section, .our-story-section, 
+.empowerment-section {
+    padding-bottom: 3em;
+}
+
+
+.objectives-care__card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3em;
+    text-align: center;
+}
+
+.empowerment-section {
+    padding-bottom: 5em;
+}
+
+.our-objective--padding, .why-people-care-section__header {
+    padding-bottom: 1em;
+}
+
+/*========================================== CONTACT US ==========================================================*/
+
+.form-section {
+    position: relative;
+    top: 4em;
+    padding: 1em;
+
+    width: 90%;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form__fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.form__fieldset > * {
+    width: 100%;
+}
+
+.form__fieldset > label .form--1__input {
+    height: 45px;
+    margin-top: .5em;
+}
+
+.image--adjustment-small {
+    width: 359px;
+}
+
+
+
+.from-section__decoration {
+    display: flex;
+    justify-content: center;
+}
+
+.image--border-radius {
+    border-radius: 50%;
+}
+
+.form--1 {
+    width: 100%;
+}
+
+.form__button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.form--1__input {
+    width: 100%;
+}
+
+.form-button--no-border {
+    border: none;
+}
+
+/*=============================================== OUR ATTRACTIONS ================================================================*/
+
 
 
 
