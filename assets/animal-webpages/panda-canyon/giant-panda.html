@@ -12,11 +12,15 @@
         <!-- Stylesheet for basic utilities like alignment, text adjustments, etc. and also the main navigations styles-->
         <link rel="stylesheet" href="../../../assets/stylesheets/utility.css">
         <link rel="stylesheet" href="../../../assets/stylesheets/navigation-stylesheet.css">
+
+        <!-- Sub animal reusable utilities -->
+        <!-- Not dependent on the main utility stylesheets above -->
+        <link rel="stylesheet" href="../animal-utilities.css">
         
         
         <title>Pine City Panda Canyon</title>
     </head>
-    <body>
+    <body class="main--panda-background">
         <header class="main-header">
             <img src="../../../assets/logo/Pine-city-zoo-desktop.svg" alt="pine city zoo logo" class="first-logo">
             <nav class="main-navigation--bottom">
@@ -50,42 +54,51 @@
             </div>
         </header>
 
-        <section class="hero-section section--height section-mobile--position">
-            <img src="../panda-canyon/images/hero-image.jpg" alt="panda wondering in a forest"
-            class="hero-image">
-            <div class="decoration"></div>
-
-            <article class="hero__article hero__article--layout">
-                <h1 class="hero__article__heading hero__article__heading--color text--color font-title--large">The Panda Canyon</h1>
-                <p class="hero-article__sub-text text--color font-sub-text--sans">
-                    "Did you know Pandas have a large olifactorial region in their barin,
-                    thus enabeling them to sense what is happening to other pandas from
-                    miles away."
-                </p>
-            </article>
-        </section>
-        
-        <main class="main-section main-section--grid">
-            <section class="animal-section">
-                    <h2 class="animal-section__heading text--color">Panda Species</h2>
+        <main class="main-body--background-property main text--color">
+            <section class="main-first-section">
+                <h1 class="main-section__heading">GIANT PANDA BEAR</h1>
                 
-                    <ul class="animal-section__cards">
-                        <li class="animal-section__card-1">
-                            <a href="./giant-panda.html">
-                                <img src="./images/large-view/group-pandas_433905-10785.jpg" class="animal-section-card--reponsive-image">
-                                <p class="animal-section__card-description font-subtext--medium">Giant Panda</p>
-                            </a>
-                        </li>
+                <ul class="main-first-section-unordered-list--flex">
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/group-pandas_433905-10785.jpg" alt="" aria-label="image of pandas smiling at the camera"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            Pandas live mainly in temperate forests high in the mountains of southwest China, 
+                            where they subsist almost entirely on bamboo.
+                        </p>
+                    </li>
 
-                        <li class="animal-section__card-1">
-                            <a href="./red-panda.html">
-                                <img src="./images/large-view/group-red-pandas_433905-10131.jpg" class="animal-section-card--reponsive-image">
-                                <p class="animal-section__card-description font-subtext--medium">Red Panda</p>
-                            </a>
-                        </li>
-                    </ul> 
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/panda-small-new.webp" alt="" aria-label="image of panda eating bamboo"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            They must eat around 26 to 84 pounds of it every day, depending on what 
+                            part of the bamboo they are eating. 
+                            They use their enlarged wrist bones that function as opposable thumbs.
+                        </p>
+                    </li>
+
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/panda-bears-climbing-trees.jpg" alt="" aria-label="image of panda eating bamboo"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            These bears are excellent tree climbers despite their bulk.
+                        </p>
+                    </li>
+
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/baby-panda.webp" alt="" aria-label="image of panda eating bamboo"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            A newborn panda is about the size of a stick of butter—about 1/900th 
+                            the size of its mother—but females can grow up to about 200 pounds, 
+                            while males can grow up to about 300 pounds as adults. 
+                        </p>
+                    </li>
+
+                </ul>
+
             </section>
-        
         </main>
     </body>
 </html>

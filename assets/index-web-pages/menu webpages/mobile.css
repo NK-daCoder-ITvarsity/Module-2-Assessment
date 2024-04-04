@@ -1,0 +1,8 @@
+/* ========================================== RESTURANT WEB ========================================================= */
+
+@media (max-width: 600px) {
+    .main-background {
+        background-position-x: -300px;
+        background-position-y: -50px;
+    }
+}

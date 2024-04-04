@@ -13,6 +13,7 @@
     --background-image: url("../../index-web-pages/menu webpages/coffee-shop-assets/senior_couple_drinking_coffee_1151996846.jpg");
     --background-second-image: url("");
     --padding-text-space: 2em;
+    --resturant-image: url("../../index-web-pages/menu webpages/resturant-images/pine-city-resturant.jpg");
 }
 
 .main {
@@ -37,13 +38,9 @@
 
 .main-body--background-adjustment  {
     background-position-y: -3em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: hsla(0, 0%, 0%, 0.603);
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-    filter: contrast(1.25);
 }
+
+
 
 .card-unordered-list__card {
     background: var(--card-background);
@@ -111,3 +108,48 @@
     overflow: auto;
 }
 
+/*=================================== RESTURANT PAGE ================================================*/
+.main-background {
+    background-image: var(--resturant-image);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.resturant-hero {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin-bottom: 90em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered--content {
+    margin: 0 auto;
+}
+
+.resturant-logo {
+    width: 100px;
+    height: 100px;
+    filter: contrast(1.5);
+    margin-bottom: 1em;
+}
+
+.breakfast-menu-section {
+    background-color: var(--background-color);
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+.resturant-hero__heading {
+    padding-bottom: .5em;
+}

@@ -43,3 +43,34 @@
     }
 
 }
+
+/*========================================== GIANT PANDA WEBPAGE =================================================*/
+@media (max-width: 900px) {
+    .main-background-image--panda {
+        background-position-x: -200px;
+    }   
+}
+
+@media (max-width: 900px) 
+{
+    .main-section__unordered-list > li img {
+        order: 1;
+    }
+
+    .main-section__unordered-list > li p {
+        order: 2;
+    }
+}
+
+@media (min-width: 500px){
+    .main-body--background-property {
+        background-position-x: 0px;
+    }
+}
+
+/*======================================== RED PANDAS ===================================================*/
+@media (max-width: 900px) {
+    .main--red-panda-background {
+        background-position-x: -1000px;
+    }
+}

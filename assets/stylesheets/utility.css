@@ -85,3 +85,13 @@
     list-style-type: none;
 }
 
+/* ===================================== BACKGROUND MODIFIER ================================================ */
+.main-body--background-property {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.753);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    filter: contrast(1.25);
+}
+

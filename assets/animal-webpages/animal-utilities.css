@@ -1,0 +1,43 @@
+/* ==============================================================
+    THIS CSS IS FOR THE SUBWEBSITES IF A ANIMAL CARD IS CLICKED
+================================================================= */
+:root {
+    --unordered-list-font-size: clamp(1rem, calc(1rem + ((1vw - 0.12rem) * 0.885)), 2rem);
+}
+
+.main {
+    padding-top: 6em;
+    padding-bottom: 5em;
+}
+
+.main-first-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-first-section__image {
+    background-color: white;
+    padding: .5em;
+    border-radius: var(--card-picture-border);
+}
+
+.main-section__heading {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.main-first-section-unordered-list--flex, .unordered-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unordered-list__item {
+    gap: .8em;
+    padding-bottom: 4em;
+}
+
+.unordered-list__font-size {
+    font-size: var(--unordered-list-font-size);
+}

@@ -7,6 +7,8 @@
 
 body {
     background: var(--document-color);
+    background-repeat: no-repeat;
+    border: 1px solid red;
 }
 
 :root {
@@ -15,6 +17,8 @@ body {
     --card-color: white;
     --card-picture-border: 10%;
     --section-margin-space: 4em;
+    --panda-background: url("../../images/large-view/group-pandas_433905-10785.jpg");
+    --red-panda-background: url("../../images/large-view/group-red-pandas_433905-10131.jpg");
 }
 
 /* ======================================= HERO SECTION =========================================== */
@@ -44,7 +48,6 @@ body {
 }
 
 .hero__article {
-    
     height: auto;
     margin-top: 9.9%;
 }
@@ -110,6 +113,20 @@ body {
 .animal-section__card-description::before {
     content: ">> ";
 }
+
+/* ================================================= PANDA WEBSITES ======================================================== */
+.main--panda-background {
+    background-image: var(--panda-background);
+}
+
+.main--red-panda-background {
+    background-image: var(--red-panda-background);
+}
+
+.main--panda-background, .main--red-panda-background {
+    background-size: cover;
+}
+
 
 
 

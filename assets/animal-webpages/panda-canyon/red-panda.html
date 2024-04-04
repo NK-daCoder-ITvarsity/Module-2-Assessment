@@ -12,11 +12,15 @@
         <!-- Stylesheet for basic utilities like alignment, text adjustments, etc. and also the main navigations styles-->
         <link rel="stylesheet" href="../../../assets/stylesheets/utility.css">
         <link rel="stylesheet" href="../../../assets/stylesheets/navigation-stylesheet.css">
+
+        <!-- Sub animal reusable utilities -->
+        <!-- Not dependent on the main utility stylesheets above -->
+        <link rel="stylesheet" href="../animal-utilities.css">
         
         
         <title>Pine City Panda Canyon</title>
     </head>
-    <body>
+    <body class="main--red-panda-background">
         <header class="main-header">
             <img src="../../../assets/logo/Pine-city-zoo-desktop.svg" alt="pine city zoo logo" class="first-logo">
             <nav class="main-navigation--bottom">
@@ -50,42 +54,50 @@
             </div>
         </header>
 
-        <section class="hero-section section--height section-mobile--position">
-            <img src="../panda-canyon/images/hero-image.jpg" alt="panda wondering in a forest"
-            class="hero-image">
-            <div class="decoration"></div>
-
-            <article class="hero__article hero__article--layout">
-                <h1 class="hero__article__heading hero__article__heading--color text--color font-title--large">The Panda Canyon</h1>
-                <p class="hero-article__sub-text text--color font-sub-text--sans">
-                    "Did you know Pandas have a large olifactorial region in their barin,
-                    thus enabeling them to sense what is happening to other pandas from
-                    miles away."
-                </p>
-            </article>
-        </section>
-        
-        <main class="main-section main-section--grid">
-            <section class="animal-section">
-                    <h2 class="animal-section__heading text--color">Panda Species</h2>
+        <main class="main-body--background-property main text--color">
+            <section class="main-first-section">
+                <h1 class="main-section__heading">RED PANDA</h1>
                 
-                    <ul class="animal-section__cards">
-                        <li class="animal-section__card-1">
-                            <a href="./giant-panda.html">
-                                <img src="./images/large-view/group-pandas_433905-10785.jpg" class="animal-section-card--reponsive-image">
-                                <p class="animal-section__card-description font-subtext--medium">Giant Panda</p>
-                            </a>
-                        </li>
+                <ul class="main-first-section-unordered-list--flex">
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/red-panda.jpg" alt="" aria-label="image of a red panda smiling at the camera"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            The red panda is slightly larger than a domestic cat with a bear-like body and thick russet fur. 
+                            The belly and limbs are black, and there are white markings on the side of the head and above its 
+                            small eyes. Almost 50% of the red panda's habitat is in the Eastern Himalayas 
+                        </p>
+                    </li>
 
-                        <li class="animal-section__card-1">
-                            <a href="./red-panda.html">
-                                <img src="./images/large-view/group-red-pandas_433905-10131.jpg" class="animal-section-card--reponsive-image">
-                                <p class="animal-section__card-description font-subtext--medium">Red Panda</p>
-                            </a>
-                        </li>
-                    </ul> 
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/red-panda-bamboo.jpg" alt="" aria-label="image of red panda eating bamboo"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            Known for eating roots, succulent grasses, fruits, insects and grubs, and are 
+                            known to occasionally kill and eat birds and small mammals
+                        </p>
+                    </li>
+
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/red-pandas-in-trees.jpeg" alt="" aria-label="image of red panda climbing trees"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            Red pandas are very skillful and acrobatic animals that predominantly stay in trees
+                        </p>
+                    </li>
+
+                    <li class="unordered-list__item text-alignment--center">
+                        <img src="../panda-canyon/images/large-view/random-panda-images/red-panda-babies.jpg" alt="" aria-label="image of red panda babies"
+                        class="main-first-section__image image--responsive">
+                        <p class="unordered-list__font-size">
+                            Red panda mothers birth between one and four cubs.
+                            The Red Panda Mother Teaches their cubs how to climb trees, 
+                            hunt for their food and stays very close to her cubs.
+                        </p>
+                    </li>
+                </ul>
+
             </section>
-        
         </main>
     </body>
 </html>
