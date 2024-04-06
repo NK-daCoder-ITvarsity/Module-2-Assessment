@@ -9,6 +9,7 @@
     --main-body-background: hsl(0, 0%, 5%);
     --image-overlay: hsla(0, 0%, 0%, 0.356);
     --background-image-hero-mobile: url("../images/lion.jpg");
+    --african-oddyssey-background: url("../images/african-animal-images/african-background-image.jpg");
 }
 
 .background-color {
@@ -53,4 +54,10 @@
 
 .hero-section-article__head {
     padding-bottom: .2em;
+}
+
+/*=========================================== AFRICAN ODYSSEY LION ========================================================*/
+.main-african--background {
+    background-image: var(--african-oddyssey-background);
+    background-size: cover;
 }
