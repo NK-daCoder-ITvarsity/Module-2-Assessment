@@ -298,3 +298,56 @@
     text-align: center;
 }
 
+/* =========================================== WEATHER FORECAST ====================================================== */
+
+.main-weather__heading {
+    padding: 1em;
+    text-align: center;
+}
+
+.weather-main-area {
+    padding-bottom: 10em;
+}
+
+.main-weather {
+    position: relative;
+    top: 5em;
+    border-radius: 30px;
+    background-color: white;
+
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 2em;
+}
+
+.table-image {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 975px) {
+    .main-weather {
+        position: relative;
+        top: 6em;
+    }
+}
+
+.left-padding {
+    padding-left: 2em
+}
+
+td {
+    border-top: 2px solid black;
+}
+
+.main-area__table {
+    width: 100%;
+}
+
+.main-background--weather-image {
+    background-image: url("../menu webpages/weather-forcast-assets/HD-wallpaper-green-leaves-awesome-love.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -33,3 +33,15 @@
         background-position-x: 50vw;
     }
 }
+
+@media (min-width: 369px) and (max-width: 400px) {
+    .hero-section {
+        background-position-x: -35vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .hero-section {
+        background-position-x: 0vw;
+    }
+}
