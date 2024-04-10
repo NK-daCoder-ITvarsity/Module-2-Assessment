@@ -6,3 +6,97 @@
         background-position-y: -50px;
     }
 }
+
+/* ========================================== ONLINE SHOP WEBSITE ========================================================= */
+@media (max-width: 900px) {
+    .main-area--alignment {
+        position: relative;
+        top: 3.2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .background-image--adjustments {
+        background-image: none;
+    }
+
+    .main-area--image {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-text-area {
+        position: relative;
+        top: 5em;
+        width: 90%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button {
+        width: 50%;
+        padding: 1em;
+        background-color: var(--button-color);
+        border-radius: 5px;
+    }
+
+    .section-text__heading {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (min-width: 899px) and (max-width: 1063px){
+    .hero-text-area {
+        position: relative;
+        top: 7em;
+        left: -10em;
+        width: 90%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button {
+        width: 25%;
+        padding: 1em;
+        background-color: var(--button-color);
+        border-radius: 5px;
+    }
+
+    .section-text__heading {
+        text-align: center;
+        padding-left: 2em;
+    }
+}
+
+/*========================================= ONLINE SHOP CARD ===================================================*/
+@media (min-width: 450px) and (max-width: 875px){
+    .shopping-catalogue__unordered-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px){
+    .shopping-catalogue__unordered-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

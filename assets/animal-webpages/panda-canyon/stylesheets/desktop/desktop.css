@@ -8,7 +8,6 @@
 body {
     background: var(--document-color);
     background-repeat: no-repeat;
-    border: 1px solid red;
 }
 
 :root {

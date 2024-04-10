@@ -1,0 +1,45 @@
+.hero-section__header {
+    position: relative;
+    top: 5em;
+    width: 90%;
+    min-width: 128px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 900px){
+    .hero-section__header {
+        position: relative;
+        top: 3em;
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .article--2col {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 900px)
+{
+    .main-article {
+        display: grid;
+    }
+
+    .main-article > .article-text__section{
+        order: 2;
+    }
+
+    .main-article > p {
+        order: 1;
+    }
+}
+
+@media (max-width: 950px) {
+    .article-text__section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

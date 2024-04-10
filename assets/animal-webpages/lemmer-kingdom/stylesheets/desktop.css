@@ -9,6 +9,7 @@
     --main-body-background: hsl(0, 0%, 5%);
     --image-overlay: hsla(0, 0%, 0%, 0.356);
     --background-image-hero-mobile: url("../images/hero-lemur.jpg");
+    --lemmur-background: url();
 }
 
 .background-color {
@@ -53,6 +54,10 @@
 
 .hero-section-article__head {
     padding-bottom: .2em;
+}
+
+.main-lemmur--background {
+    background-image: var(--lemmur-background);
 }
 
 

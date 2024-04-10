@@ -9,6 +9,7 @@
     --main-body-background: hsl(0, 0%, 5%);
     --image-overlay: hsla(0, 0%, 0%, 0.356);
     --background-image-hero-mobile: url("../home-image.jpg");
+    --polar-background: url("../images/random-artic-images/ice-background.jpg");
 }
 
 .background-color {
@@ -53,6 +54,11 @@
 
 .hero-section-article__head {
     padding-bottom: .2em;
+}
+
+/* ============================================== INNER WEBPAGES STYLES ======================================================== */
+.main-polar--background {
+    background-image: var(--polar-background);
 }
 
 
