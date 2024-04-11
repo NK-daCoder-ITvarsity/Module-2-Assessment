@@ -16,7 +16,7 @@ you to view a map of the zoo incase you get lost
 ## Getting Started
 No installation is reguired Visit this link to the
 Web App: 
-[PINE CITY ZOO APP]("https://nk-dacoder-itvarsity.github.io/Module-2-Assessment-1/index.html")
+[Pine City Zoo Web App]("https://nk-dacoder-itvarsity.github.io/Module-2-Assessment-1/index.html")
 
 ## Technologies Used
 - HTML5
